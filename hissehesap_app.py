@@ -1,7 +1,6 @@
 #pip install streamlit
 
 #%%writefile deneme.py
-
 import streamlit as st
 
 #streamlit.config.theme.base = "dark"
@@ -10,9 +9,6 @@ st.set_page_config(
   page_title="Hisse Hedef Fiyat Hesaplayıcı",
   page_icon="https://example.com/icon.png",
   layout="centered",
-  #accent_color="#00ff00",
-  #font_family="Arial",
-  #font_size="16px",
 )
 st.write("Hisse Hedef Fiyat Hesaplayıcı")
 # Hisse Fiyatı
@@ -39,7 +35,7 @@ c7 = st.number_input("Yıllık Net Kar: ")
 # Özsermaye
 c8 = st.number_input("Özsermaye : ")
 
-# Güncel Piyasa Değer
+# Güncel Piyasa Değeri
 #c9 = st.number_input("Güncel Piyasa Değeri: ")
 
 operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
@@ -75,5 +71,6 @@ elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
 
 if __name__ == "__main__":
   st.run()
+
 
 #!streamlit run deneme.py & npx localtunnel --port 8501
