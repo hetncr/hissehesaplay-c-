@@ -73,6 +73,7 @@ elif operation == "P/D Hedef Fiyat":
 elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
   st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
 
-
+if __name__ == "__main__":
+  st.run()
 
 #!streamlit run deneme.py & npx localtunnel --port 8501
