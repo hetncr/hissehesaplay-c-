@@ -5,7 +5,7 @@
 import streamlit as st
 
 #streamlit.config.theme.base = "dark"
-st.write("Hisse Hedef Fiyat Hesaplayıcı")
+st.title("Hisse Hedef Fiyat Hesaplayıcı")
 st.set_page_config(
   page_title="Hisse Hedef Fiyat Hesaplayıcı",
   page_icon="https://example.com/icon.png",
@@ -43,6 +43,14 @@ c8 = st.number_input("Özsermaye : ")
 #c9 = st.number_input("Güncel Piyasa Değeri: ")
 
 operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
+#operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
+
+# Print the result of the selection
+if operation == "F/K Hedef Fiyat":
+  st.write(f"F/K Hedef Fiyat: {fk_hedef_fiyat}")
+
+elif operation == "P/D Hedef Fiyat":
+  st.write(f"P/D Hedef Fiyat: {pd_hedef_fiyat}")
 
 if operation == "F/K Hedef Fiyat":
   if c10 != 0:
