@@ -43,7 +43,25 @@ c8 = st.number_input("Özsermaye : ")
 #c9 = st.number_input("Güncel Piyasa Değeri: ")
 
 operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
-#operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
+
+# Calculate the target price based on the selected operation
+if operation == "F/K Hedef Fiyat":
+  if c10 != 0:
+    fk_hedef_fiyat = c3 / c10 * c13
+  else:
+    fk_hedef_fiyat = 0
+
+elif operation == "P/D Hedef Fiyat":
+  if c10 != 0:
+    pd_hedef_fiyat = c3 / c11 * c13
+  else:
+    pd_hedef_fiyat = 0
+
+elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
+  if c10 != 0:
+    odenmis_hedef_fiyat = (c7 / c4) * c10
+  else:
+    odenmis_hedef_fiyat = 0
 
 # Print the result of the selection
 if operation == "F/K Hedef Fiyat":
@@ -52,20 +70,8 @@ if operation == "F/K Hedef Fiyat":
 elif operation == "P/D Hedef Fiyat":
   st.write(f"P/D Hedef Fiyat: {pd_hedef_fiyat}")
 
-if operation == "F/K Hedef Fiyat":
-  if c10 != 0:
-    fk_hedef_fiyat = c3 / c10 * c13
-    st.write(f"F/K Hedef Fiyat: {fk_hedef_fiyat}")
-
-elif operation == "P/D Hedef Fiyat":
-  if c10 != 0:
-    pd_hedef_fiyat = c3/c11*c13
-    st.write(f"P/D Hedef Fiyat: {pd_hedef_fiyat}")
-
 elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
-  if c10 != 0:
-    odenmis_hedef_fiyat = (c7/c4)*c10
-    st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
+  st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
 
 
 
