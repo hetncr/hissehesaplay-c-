@@ -14,7 +14,7 @@ st.set_page_config(
   #font_family="Arial",
   #font_size="16px",
 )
-
+st.write("Hisse Hedef Fiyat Hesaplayıcı")
 # Hisse Fiyatı
 c3 = st.number_input("Hisse Fiyatı:" )
 
