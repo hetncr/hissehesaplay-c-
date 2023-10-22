@@ -1,4 +1,4 @@
-pip install streamlit
+#pip install streamlit
 
 %%writefile deneme.py
 
