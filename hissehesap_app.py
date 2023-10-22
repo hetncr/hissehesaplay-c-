@@ -1,6 +1,6 @@
-pip install streamlit
+#pip install streamlit
 
-%%writefile deneme.py
+#%%writefile deneme.py
 
 import streamlit as st
 
