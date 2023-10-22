@@ -5,13 +5,13 @@ import streamlit as st
 
 #streamlit.config.theme.base = "dark"
 st.title("Hisse Hedef Fiyat Hesaplayıcı")
-st.set_page_config(
+#st.set_page_config(
   page_title="Hisse Hedef Fiyat Hesaplayıcı",
   page_icon="https://example.com/icon.png",
   layout="centered",
-)
+#)
 
-import streamlit_tags as tags
+#import streamlit_tags as tags
 
 st.write("Hisse Hedef Fiyat Hesaplayıcı")
 # Hisse Fiyatı
