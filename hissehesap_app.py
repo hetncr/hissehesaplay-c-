@@ -5,7 +5,7 @@
 import streamlit as st
 
 #streamlit.config.theme.base = "dark"
-
+st.write("Hisse Hedef Fiyat Hesaplayıcı")
 st.set_page_config(
   page_title="Hisse Hedef Fiyat Hesaplayıcı",
   page_icon="https://example.com/icon.png",
