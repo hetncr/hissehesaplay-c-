@@ -64,10 +64,10 @@ elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
 
 # Print the result of the selection
 if operation == "F/K Hedef Fiyat":
-  st.write(f"F/K Hedef Fiyat: {fk_hedef_fiyat}")
+  st.write(f"F/K HEDEF FİYAT: {fk_hedef_fiyat}")
 
 elif operation == "P/D Hedef Fiyat":
-  st.write(f"P/D Hedef Fiyat: {pd_hedef_fiyat}")
+  st.write(f"P/D HEDEF FİYAT: {pd_hedef_fiyat}")
 
 elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
   st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
