@@ -42,7 +42,7 @@ c8 = st.number_input("Özsermaye : ")
 # Güncel Piyasa Değer
 #c9 = st.number_input("Güncel Piyasa Değeri: ")
 
-operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
+#operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
 
 if operation == "F/K Hedef Fiyat":
   if c10 != 0:
@@ -58,5 +58,7 @@ elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
   if c10 != 0:
     odenmis_hedef_fiyat = (c7/c4)*c10
     st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
+
+operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
 
 #!streamlit run deneme.py & npx localtunnel --port 8501
