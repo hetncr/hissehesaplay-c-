@@ -59,4 +59,4 @@ elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
     odenmis_hedef_fiyat = (c7/c4)*c10
     st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
 
-!streamlit run deneme.py & npx localtunnel --port 8501
+#!streamlit run deneme.py & npx localtunnel --port 8501
