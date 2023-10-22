@@ -10,6 +10,9 @@ st.set_page_config(
   page_icon="https://example.com/icon.png",
   layout="centered",
 )
+
+import streamlit_tags as tags
+
 st.write("Hisse Hedef Fiyat Hesaplayıcı")
 # Hisse Fiyatı
 c3 = st.number_input("Hisse Fiyatı:" )
