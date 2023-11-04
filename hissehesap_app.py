@@ -51,13 +51,13 @@ if operation == "F/K Hedef Fiyat":
     fk_hedef_fiyat = 0
 
 elif operation == "P/D Hedef Fiyat":
-  if c10 != 0:
+  if c11 != 0:
     pd_hedef_fiyat = c3 / c11 * c13
   else:
     pd_hedef_fiyat = 0
 
 elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
-  if c10 != 0:
+  if c4 != 0:
     odenmis_hedef_fiyat = (c7 / c4) * c10
   else:
     odenmis_hedef_fiyat = 0
