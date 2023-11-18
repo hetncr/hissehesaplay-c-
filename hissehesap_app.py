@@ -41,7 +41,7 @@ c8 = st.number_input("Özsermaye : ")
 # Güncel Piyasa Değeri
 #c9 = st.number_input("Güncel Piyasa Değeri: ")
 
-operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT"])
+operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiyat", "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT", "ÖZSERMAYE KARLILIĞINA GÖRE HEDEF FİYAT"])
 
 # Calculate the target price based on the selected operation
 if operation == "F/K Hedef Fiyat":
