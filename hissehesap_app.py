@@ -72,6 +72,11 @@ elif operation == "P/D Hedef Fiyat":
 elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
   st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
 
+elif operation == "ÖZSERMAYE KARLILIĞINA GÖRE HEDEF FİYAT":
+  if c10 != 0:
+    ozsermaye_hf = (c7/c8)*10/c11*c3
+    st.write(f"ÖZSERMAYE KARLILIĞINA GÖRE HEDEF FİYAT: {ozsermaye_hf }")
+
 #if __name__ == "__main__":
 #  st.run()
 
