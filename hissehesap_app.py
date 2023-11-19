@@ -46,7 +46,7 @@ operation = st.selectbox("İşlem Seçimi:", ["F/K Hedef Fiyat", "P/D Hedef Fiya
 # Calculate the target price based on the selected operation
 if operation == "F/K Hedef Fiyat":
   if c10 != 0:
-    fk_hedef_fiyat = c3 / c10 * c13
+    fk_hedef_fiyat = c3 / c10 * c12
   else:
     fk_hedef_fiyat = 0
 
