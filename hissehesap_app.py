@@ -64,18 +64,18 @@ elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
 
 # Print the result of the selection
 if operation == "F/K Hedef Fiyat":
-  st.write(f"F/K HEDEF FİYAT: {fk_hedef_fiyat}")
+  st.write(f"F/K HEDEF FİYAT: {fk_hedef_fiyat:,.2f}")
 
 elif operation == "P/D Hedef Fiyat":
-  st.write(f"P/D HEDEF FİYAT: {pd_hedef_fiyat}")
+  st.write(f"P/D HEDEF FİYAT: {pd_hedef_fiyat:,.2f}")
 
 elif operation == "ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT":
-  st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat}")
+  st.write(f"ÖDENMİŞ SERMAYEYE GÖRE HEDEF FİYAT: {odenmis_hedef_fiyat:,.2f}")
 
 elif operation == "ÖZSERMAYE KARLILIĞINA GÖRE HEDEF FİYAT":
   if c10 != 0:
     ozsermaye_hf = (c7/c8)*10/c11*c3
-    st.write(f"ÖZSERMAYE KARLILIĞINA GÖRE HEDEF FİYAT: {ozsermaye_hf }")
+    st.write(f"ÖZSERMAYE KARLILIĞINA GÖRE HEDEF FİYAT: {ozsermaye_hf:,.2f}")
 
 #if __name__ == "__main__":
 #  st.run()
