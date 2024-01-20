@@ -4,7 +4,7 @@
 import streamlit as st
 
 #streamlit.config.theme.base = "dark"
-st.title("Hocalar Hisse Hesaplıyor  :currency_exchange: :chart:")
+st.title("Hocalar Hisse Hesaplıyor  :chart:")
 st.subheader("Road to Kıbrıs :airplane_departure: :sunglasses:")
 #st.set_page_config(
 # page_title="Hisse Hedef Fiyat Hesaplayıcı",
