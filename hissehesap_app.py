@@ -97,7 +97,7 @@ elif operation == "F/K HEDEF FİYAT":
     st.write(f":blue[**F/K HEDEF FİYAT:**] {fk_hedef_fiyat:,.2f}")
     st.write(f" :chart:**:blue[HİSSE FİYATI:]**  {kapanıs}")
 
- elif operation == "PD/DD HEDEF FİYAT":
+elif operation == "PD/DD HEDEF FİYAT":
    if c11 != 0:
      pd_hedef_fiyat = c3 / c11 * c13
    else:
